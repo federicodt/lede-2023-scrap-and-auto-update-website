@@ -28,7 +28,9 @@ jobs:
     - name: Install all necessary packages
       run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib
     - name: Install Altair
-      run: pip install altair
+      run: pip install altair pip 
+    - name: Altair Viewer
+      run: pip install -U altair_viewer
     - name: Install Altair saver
       run: pip install altair_saver
     - name: Scraping today's data
