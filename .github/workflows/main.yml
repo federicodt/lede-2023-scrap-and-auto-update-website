@@ -29,6 +29,8 @@ jobs:
       run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib
     - name: Install Altair
       run: pip install altair
+    - name: Install Altair saver
+      run: pip install altair_saver
     - name: Scraping today's data
       run: jupyter nbconvert --to notebook --execute "01-Scraper.ipynb" --stdout
     - name: Update our website
