@@ -31,7 +31,7 @@ jobs:
       run: pip install altair pip 
     - name: Altair Viewer
       run: pip install -U altair_viewer
-    - name: Install Altair saver
+    - name: Install Altair Saver
       run: pip install altair_saver
     - name: Scraping today's data
       run: jupyter nbconvert --to notebook --execute "01-Scraper.ipynb" --stdout
